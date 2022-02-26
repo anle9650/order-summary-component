@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+body {
+    height: 100vh;
+    font-family: 'Red Hat Display', sans-serif;
+    font-size: 16px;
+    background-image: url('images/pattern-background-desktop.svg');
+    background-size: cover;
+}
+
+.card {
+    width: 27rem;
+    border-radius: 1rem;
+}
+.card .card-container {
+    padding: 1rem 3rem 3rem;
+}
+
+.card img {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+}
+.card .card-title {
+    font-weight: 900;
+}
+.card .btn-primary {
+    background-color: hsl(245, 75%, 52%);
+    border-color: hsl(245, 75%, 52%);
+    border-radius: .5rem;
+    padding: .75rem;
+    box-shadow: 0 1rem 1rem hsl(225, 40%, 78%);
+}
+.card .btn-primary:hover {
+    background-color: hsl(245, 75%, 70%);
+    border-color: hsl(245, 75%, 70%);
+}
+.card a {
+    color: grey;
+    font-weight: 700;
+}
+.card a:hover {
+    color: black;
+    text-decoration: None;
+}
+
+.media {
+    background-color: hsl(225, 100%, 98%);
+    padding: 1.25rem;
+    border-radius: 1rem;
+    line-height: 1rem;
+}
+.media .media-title {
+    font-weight: 900;
+}
+.media a {
+    color: hsl(245, 75%, 52%);
+    font-weight: 700;
+    text-decoration: underline;
+}
+.media a:hover {
+    color: hsl(245, 75%, 70%);
+    text-decoration: None;
+}
+
+@media screen and (max-width: 390px) {
+    body {
+        background-image: url('images/pattern-background-mobile.svg');
+    }
+    .card {
+        width: 24rem;
+        border-radius: 1rem;
+    }
+    .card .card-container {
+        padding: 2rem;
+    }
+}
